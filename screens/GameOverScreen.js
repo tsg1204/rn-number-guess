@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, Image, Dimensions, ScrollView} from 'react-native';
+import { View, Text, StyleSheet, Button, Image, Dimensions, ScrollView, SafeAreaView} from 'react-native';
 
 import BodyText from '../components/BodyText';
 import DefaultStyles from '../constants/default-styles';
-//import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Colors from '../constants/colors';
 import MainButton from '../components/MainButton';
 
@@ -36,7 +35,8 @@ const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingVertical: 10
     },
     imageContainer: {
         borderRadius: Dimensions.get('window').width * 0.6 / 2,
